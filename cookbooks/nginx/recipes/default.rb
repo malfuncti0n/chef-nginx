@@ -10,7 +10,7 @@
 include_recipe "apt"
 
 #install nginx package
-pachage 'nginx' do
+package 'nginx' do
  action :install
 end
 
