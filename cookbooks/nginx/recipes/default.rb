@@ -20,7 +20,7 @@ service 'nginx' do
 end
 
 #add template file to nginx server
-cookbook_file "/usr/share/nginx/www/index.html" do
+cookbook_file "/var/www/html/index.html" do
   source "index.html"
   mode "0644"
 end
