@@ -1,7 +1,7 @@
-Deprecated
+Nginx with PHP-FPM
 ==========
 
-Use of this repository is deprecated. We recommend using the `chef generate repo` command that comes with [ChefDK](http://downloads.chef.io/chef-dk/).
+This repo conbine 2 autonomus recipes chef_nginx and php-fpm to provide a wokring out of box web server.
 
 Overview
 ========
