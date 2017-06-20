@@ -9,7 +9,7 @@ Overview
 it has dynamic configuration throught attributes. After installation you will see the php info page.
 
 
-Working on Ubuntu 16.04
+Tested on Ubuntu 16.04
 ======================
 
 This recive tested on ubuntu 16.04 but both base recipes work on many distribution such us
