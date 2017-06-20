@@ -38,7 +38,7 @@ default['nginx']['ulimit']       = '1024'
 # set this to nil to use the distro packages
 # this is ignored if install_method is set to source
 default['nginx']['repo_source']    = 'nginx'
-default['nginx']['install_method'] = 'package'
+default['nginx']['install_method'] = 'source'
 
 case node['platform_family']
 when 'rhel', 'fedora', 'amazon'
@@ -55,6 +55,7 @@ when 'suse'
   default['nginx']['group']      = 'www'
 else # debian probably
   default['nginx']['user']       = 'www-data'
+  default['nginx']['default_root'] = '/var/www/html'
 end
 
 default['nginx']['upstart']['runlevels']     = '2345'
