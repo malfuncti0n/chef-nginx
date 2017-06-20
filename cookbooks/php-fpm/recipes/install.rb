@@ -19,6 +19,13 @@ package php_fpm_package_name do
   version node['php-fpm']['version'] if node['php-fpm']['version']
 end
 
+#for aditional php-fpm packages throught configuration
+unless node['php-fpm']['added_packages'].nil?
+  package node['php-fpm']['added_packages'] do 
+    action :install
+  end
+end
+
 if node['php-fpm']['service_name'].nil?
   php_fpm_service_name = php_fpm_package_name
 else
