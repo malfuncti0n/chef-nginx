@@ -168,5 +168,13 @@ else
   end
 end
 
+#add template file to nginx server
+cookbook_file "/var/www/html/index.php" do
+  source "index.php"
+  mode "0644"
+end
+
+
+
 node.run_state.delete('nginx_configure_flags')
 node.run_state.delete('nginx_force_recompile')

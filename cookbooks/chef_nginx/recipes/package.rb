@@ -50,4 +50,10 @@ service 'nginx' do
   action   [:start, :enable]
 end
 
+#add template file to nginx server
+cookbook_file "/var/www/html/index.php" do
+  source "index.php"
+  mode "0644"
+end
+
 include_recipe 'chef_nginx::commons'
