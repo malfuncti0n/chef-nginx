@@ -1,7 +1,7 @@
 Nginx with PHP-FPM
 ==========
 
-This repo combine 2 autonomus recipes chef_nginx and php-fpm to provide a wokring out of box web server.
+This repo combine Nginx and PHP-FPM to provide a wokring out of box web server hight performance web server. Its also install composer for php managment.
 
 Overview
 ========
