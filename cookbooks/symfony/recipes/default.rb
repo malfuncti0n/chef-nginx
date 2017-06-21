@@ -13,28 +13,6 @@
 #    action :sync
 #end
 
-#create symfony installer
-
-execute 'symfony_make_bin' do
-  command 'mkdir -p /usr/local/bin'
-end
-
-execute 'symfony_get_installer' do
-  command 'curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony'
-
-end
-execute 'symfony_make_executable' do
-  command 'chmod a+x /usr/local/bin/symfony'
-end
-
-
-#install symfony in custom path
-execute 'symfony_framework_install' do
-  command "symfony new #{node['symfony']['apps_base_dir']}/#{node['symfony']['app_name']}" 
-end
-
-
-#change owner
-execute 'symfony_web_change_owner_group' do
-  command "chown -R #{node['symfony']['web_server']}:#{node['symfony']['web_server']}  #{node['symfony']['apps_base_dir']}"
-end
+include_recipe "symfony::add_installer"
+include_recipe "symfony::new_symfony"
+include_recipe "symfony::create_vhosts"
