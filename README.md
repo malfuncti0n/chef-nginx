@@ -1,7 +1,7 @@
 Nginx with PHP-FPM
 ==========
 
-This repo combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install composer for php managment.
+This repo combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install composer for php managment. It's also install symfony framework under your web path.
 
 Overview
 ========
