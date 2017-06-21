@@ -1,6 +1,12 @@
-execute 'symfony_make_bin' do
-  command 'mkdir -p /usr/local/bin'
+#create directory to store ssl
+bin_dir="/usr/local/bin"
+
+directory ssl_dir do
+  owner node['symfony']['webserver']
+  group node['symfony']['webserver']
+  recursive true
 end
+
 
 execute 'symfony_get_installer' do
   command 'curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony'
