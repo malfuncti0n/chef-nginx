@@ -1,3 +1,9 @@
+#if folder allready install delete it before
+directory "#{node['symfony']['apps_base_dir']}/#{node['symfony']['app_name']}" do
+  recursive true
+  action :delete
+end
+
 #install symfony in custom path
 execute 'symfony_framework_install' do
   command "symfony new #{node['symfony']['apps_base_dir']}/#{node['symfony']['app_name']}"
