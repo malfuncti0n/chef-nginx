@@ -1,7 +1,7 @@
 #create directory to store ssl
 bin_dir="/usr/local/bin"
 
-directory ssl_dir do
+directory bin_dir do
   owner node['symfony']['webserver']
   group node['symfony']['webserver']
   recursive true
