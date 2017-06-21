@@ -170,6 +170,17 @@ include_recipe 'chef_nginx::daemon_reload'
   end
 end
 
+
+#create directory /var/www/html if not exist
+dir="/var/www/html"
+
+directory dir do
+  owner node['nginx']['user']
+  group node['nginx']['user']
+  recursive true
+end
+
+
 #add template file to nginx server
 cookbook_file "/var/www/html/index.php" do
   source "index.php"

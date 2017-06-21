@@ -18,7 +18,10 @@ include_recipe "apt"
 include_recipe "chef_nginx"
 include_recipe "php-fpm"
 include_recipe "composer_c"
-#the following are recipes
+include_recipe "acme"
+#the following are recipes of this cookbook
 include_recipe "symfony::add_installer"
 include_recipe "symfony::new_symfony"
 include_recipe "symfony::create_vhosts"
+include_recipe "symfony::enable_vhosts"
+include_recipe "symfony::generate_self_sign_cert"
