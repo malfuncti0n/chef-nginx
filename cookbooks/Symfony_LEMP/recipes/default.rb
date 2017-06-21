@@ -10,11 +10,12 @@
 #update cache
 include_recipe "apt"
 
+#install and configure php-fpm
+include_recipe "php-fpm"
+
 #install and configure nginx
 include_recipe "chef_nginx"
 
-#install and configure php-fpm
-include_recipe "php-fpm"
 
 #intall and configure composer
 include_recipe "composer_c"
