@@ -1,7 +1,7 @@
 Symfony Framework on LEMP stack
 ==========
 
-This repo combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install MySQL for database, composer for php managment and symfony framework under your web path.
+This repo use chef and combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install MySQL for database, composer for php managment and symfony framework under your web path.
 
 Overview
 ========
