@@ -1,7 +1,7 @@
-Symfony Framework on Nginx with PHP-FPM
+Symfony Framework on LEMP stack
 ==========
 
-This repo combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install composer for php managment and symfony framework under your web path.
+This repo combine Nginx and PHP-FPM to provide a wokring out of box a high performance web server. Its also install MySQL for database, composer for php managment and symfony framework under your web path.
 
 Overview
 ========
@@ -16,6 +16,7 @@ Steps
 * `composer` - For php managment
 * `Acme client` - For ssl request
 * `Symfony framework` - Installation in custom hostname
+* `MySQL server` - Install MySQL as a database
 
 How to run
 ==========
