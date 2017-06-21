@@ -8,6 +8,14 @@ Overview
 
 it has dynamic configuration throught attributes. After installation you will see the php info page for default vhost and you will find 2 more virtual host enabled. one for port 80 redirect to port 443 for the virtual host name declared in  symfony attributes
 
+Steps
+=====
+
+* `Nginx` - Install and configure
+* `PHP-FPM` - Install and configure in co-operation with nginx
+* `composer` - For php managment
+* `Acme client` - For ssl request
+* `Symfony framework` - Installation in custom hostname
 
 Tested on Ubuntu 16.04
 ======================
