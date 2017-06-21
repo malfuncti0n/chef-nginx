@@ -18,3 +18,5 @@ depends "composer_c"
 depends "acme"
 #install symfony
 depends "symfony"
+#install mysql
+depends "mysql"
