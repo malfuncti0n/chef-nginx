@@ -17,6 +17,10 @@ Steps
 * `Acme client` - For ssl request
 * `Symfony framework` - Installation in custom hostname
 
+How to run
+==========
+Simple run Symfony_LEMP recipe
+
 Tested on Ubuntu 16.04
 ======================
 

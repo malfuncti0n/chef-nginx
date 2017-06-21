@@ -13,13 +13,6 @@
 #    action :sync
 #end
 
-#the followings are cookbooks to run before symfony cookbook its self
-include_recipe "apt"
-include_recipe "chef_nginx"
-include_recipe "php-fpm"
-include_recipe "composer_c"
-include_recipe "acme"
-#the following are recipes of this cookbook
 include_recipe "symfony::add_installer"
 include_recipe "symfony::new_symfony"
 include_recipe "symfony::create_vhosts"
